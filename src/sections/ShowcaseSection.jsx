@@ -12,6 +12,7 @@ const Projects = () => {
   const trainingBlogRef = useRef(null);
   const ticketGeneratorRef = useRef(null);
   const recipeRandomizerRef = useRef(null);
+  const portfolioRef = useRef(null); // New project ref
 
   useGSAP(() => {
     // Animation for the main section
@@ -28,6 +29,7 @@ const Projects = () => {
       trainingBlogRef.current,
       ticketGeneratorRef.current,
       recipeRandomizerRef.current,
+      portfolioRef.current, // Add new project to the animation
     ];
 
     cards.forEach((card, index) => {
@@ -71,19 +73,34 @@ const Projects = () => {
             <div className="p-5 md:p-5 lg:p-6">
               <div className="flex justify-between items-center mb-2">
                 <h2 className="text-lg md:text-xl lg:text-xl font-semibold">VisionaryHub</h2>
-                <a
-                  href="https://github.com/SanyamMahajan/VisionaryHub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-white-50 hover:text-white transition-colors duration-300"
-                  aria-label="View VisionaryHub on GitHub"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                    alt="GitHub"
-                    className="w-5 h-5 filter invert"
-                  />
-                </a>
+                <div className="flex gap-2">
+                  <a
+                    href="https://github.com/SanyamMahajan/VisionaryHub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View VisionaryHub on GitHub"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                      alt="GitHub"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                  <a
+                    href="https://visionary-hub-chi.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View VisionaryHub on Vercel"
+                  >
+                    <img
+                      src="https://simpleicons.org/icons/vercel.svg"
+                      alt="Vercel"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                </div>
               </div>
               <p className="text-gray-300 mb-3 text-sm md:text-base lg:text-base">
                 A full-stack startup guidance platform with an AI-powered chatbot for user support using OpenAI API.
@@ -115,19 +132,34 @@ const Projects = () => {
             <div className="p-5 md:p-5 lg:p-6">
               <div className="flex justify-between items-center mb-2">
                 <h2 className="text-lg md:text-xl lg:text-xl font-semibold">Disaster Management</h2>
-                <a
-                  href="https://github.com/SanyamMahajan/Disaster-Management"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-white-50 hover:text-white transition-colors duration-300"
-                  aria-label="View Disaster Management on GitHub"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                    alt="GitHub"
-                    className="w-5 h-5 filter invert"
-                  />
-                </a>
+                <div className="flex gap-2">
+                  <a
+                    href="https://github.com/SanyamMahajan/Disaster-Management"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Disaster Management on GitHub"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                      alt="GitHub"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                  <a
+                    href="https://disaster-management-sand.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Disaster Management on Vercel"
+                  >
+                    <img
+                      src="https://simpleicons.org/icons/vercel.svg"
+                      alt="Vercel"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                </div>
               </div>
               <p className="text-gray-300 mb-3 text-sm md:text-base lg:text-base">
                 A web app for real-time disaster tracking and response, ensuring quick access to critical information.
@@ -158,19 +190,34 @@ const Projects = () => {
             <div className="p-5 md:p-5 lg:p-6">
               <div className="flex justify-between items-center mb-2">
                 <h2 className="text-lg md:text-xl lg:text-xl font-semibold">Training Blog</h2>
-                <a
-                  href="https://github.com/SanyamMahajan/TRAINING-BLOG"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-white-50 hover:text-white transition-colors duration-300"
-                  aria-label="View Training Blog on GitHub"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                    alt="GitHub"
-                    className="w-5 h-5 filter invert"
-                  />
-                </a>
+                <div className="flex gap-2">
+                  <a
+                    href="https://github.com/SanyamMahajan/TRAINING-BLOG"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Training Blog on GitHub"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                      alt="GitHub"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                  <a
+                    href="https://sanyammahajan.github.io/TRAINING-BLOG/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Training Blog"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                      alt="GitHub Pages"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                </div>
               </div>
               <p className="text-gray-300 mb-3 text-sm md:text-base lg:text-base">
                 A dynamic blogging platform designed to share training resources, insights, and updates.
@@ -198,19 +245,34 @@ const Projects = () => {
             <div className="p-5 md:p-5 lg:p-6">
               <div className="flex justify-between items-center mb-2">
                 <h2 className="text-lg md:text-xl lg:text-xl font-semibold">Ticket Generator</h2>
-                <a
-                  href="https://github.com/SanyamMahajan/Ticket-Generator-"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-white-50 hover:text-white transition-colors duration-300"
-                  aria-label="View Ticket Generator on GitHub"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                    alt="GitHub"
-                    className="w-5 h-5 filter invert"
-                  />
-                </a>
+                <div className="flex gap-2">
+                  <a
+                    href="https://github.com/SanyamMahajan/Ticket-Generator-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Ticket Generator on GitHub"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                      alt="GitHub"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                  <a
+                    href="https://ticket-generator-alpha-orpin.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Ticket Generator on Vercel"
+                  >
+                    <img
+                      src="https://simpleicons.org/icons/vercel.svg"
+                      alt="Vercel"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                </div>
               </div>
               <p className="text-gray-300 mb-3 text-sm md:text-base lg:text-base">
                 A simple web application to generate tickets dynamically for events or systems.
@@ -230,7 +292,7 @@ const Projects = () => {
           >
             <div className="image-wrapper h-48 md:h-48 lg:h-56 relative rounded-t-xl py-0 overflow-hidden">
               <img
-                src="/images/logos/recepie.jpeg"
+                src="/images/logos/ticketgenrator.png"
                 alt="Recipe Randomizer"
                 className="w-full h-full object-cover rounded-t-xl transition-all duration-500"
               />
@@ -238,19 +300,34 @@ const Projects = () => {
             <div className="p-5 md:p-5 lg:p-6">
               <div className="flex justify-between items-center mb-2">
                 <h2 className="text-lg md:text-xl lg:text-xl font-semibold">Recipe Randomizer</h2>
-                <a
-                  href="https://github.com/SanyamMahajan/Recipe-Randomizer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-white-50 hover:text-white transition-colors duration-300"
-                  aria-label="View Recipe Randomizer on GitHub"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                    alt="GitHub"
-                    className="w-5 h-5 filter invert"
-                  />
-                </a>
+                <div className="flex gap-2">
+                  <a
+                    href="https://github.com/SanyamMahajan/Recipe-Randomizer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Recipe Randomizer on GitHub"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                      alt="GitHub"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                  <a
+                    href="https://recipe-randomizer-phi.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Recipe Randomizer on Vercel"
+                  >
+                    <img
+                      src="https://simpleicons.org/icons/vercel.svg"
+                      alt="Vercel"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                </div>
               </div>
               <p className="text-gray-300 mb-3 text-sm md:text-base lg:text-base">
                 A fun web app that suggests random meal ideas with a clean, interactive UI.
@@ -260,6 +337,62 @@ const Projects = () => {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-4 h-4" title="HTML5" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-4 h-4" title="CSS3" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-4 h-4" title="React" />
+              </div>
+            </div>
+          </div>
+
+          {/* Portfolio */}
+          <div
+            ref={portfolioRef}
+            className="bg-black-100 border border-black-50 rounded-xl overflow-hidden card transition-transform duration-300 hover:scale-105 cursor-pointer"
+          >
+            <div className="image-wrapper h-48 md:h-48 lg:h-56 relative rounded-t-xl py-0 overflow-hidden">
+              <img
+                src="/images/logos/portfolio.png"
+                alt="Portfolio"
+                className="w-full h-full object-cover rounded-t-xl transition-all duration-500"
+              />
+            </div>
+            <div className="p-5 md:p-5 lg:p-6">
+              <div className="flex justify-between items-center mb-2">
+                <h2 className="text-lg md:text-xl lg:text-xl font-semibold">Portfolio</h2>
+                <div className="flex gap-2">
+                  <a
+                    href="https://github.com/SanyamMahajan/Portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Portfolio on GitHub"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                      alt="GitHub"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                  <a
+                    href="https://portfolio-five-pied-ywz3zi9l0k.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-white-50 hover:text-white transition-colors duration-300"
+                    aria-label="View Portfolio on Vercel"
+                  >
+                    <img
+                      src="https://simpleicons.org/icons/vercel.svg"
+                      alt="Vercel"
+                      className="w-5 h-5 filter invert"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-3 text-sm md:text-base lg:text-base">
+                My personal portfolio website showcasing my projects and skills.
+              </p>
+              <div className="badges flex flex-wrap gap-1 mb-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-4 h-4" title="JavaScript" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-4 h-4" title="HTML5" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-4 h-4" title="React" />
+                <img src="/images/logos/tailwind.png" alt="Tailwind CSS" className="w-4 h-4" title="Tailwind CSS" />
               </div>
             </div>
           </div>
