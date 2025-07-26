@@ -392,7 +392,7 @@ const Projects = () => {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-4 h-4" title="JavaScript" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-4 h-4" title="HTML5" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-4 h-4" title="React" />
-                <img src="/images/logos/tailwind.png" alt="Tailwind CSS" className="w-4 h-4" title="Tailwind CSS" />
+                <img src="/images/logos/tailwind.png" alt="Tailwind CSS" className="w-4 h-4" title="Tailwind CS" />
               </div>
             </div>
           </div>
